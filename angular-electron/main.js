@@ -7,11 +7,14 @@ let win
 function createWindow () {
   // Crea la ventana del navegador.
   win = new BrowserWindow({
-    width: 600,
-    height: 800
+    width: 500,
+    height: 700
     
   })
 
+  // Window Configuration
+  win.setMenu(null);
+  
   // and load the index.html of the app.
   win.loadFile('dist/angular-electron/index.html')
 
