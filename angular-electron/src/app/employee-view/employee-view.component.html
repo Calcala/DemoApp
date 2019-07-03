@@ -1,12 +1,16 @@
 <section class="clock-section">
   <h1>
-    01
+    {{day}}
   </h1>
   <h2>
-    Julio
+    {{month}}
   </h2>
-  <p>hh:mm:ss</p>
+  <h3>hh:mm:ss</h3>
 </section>
 <section class="register-section">
-  <a class="button">Comenzar jornada</a>
+  <a *ngIf="isWorking; else elseBlock" (click) = "onEndDay()" class="action-button action-button-red">Finalizar jornada</a>
+  <ng-template #elseBlock>
+    <a  (click) = "onStartDay()" class="action-button action-button-green">Comenzar jornada</a>
+  </ng-template>
+  <!--<p>{{startedAt}}</p>-->
 </section>

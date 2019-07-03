@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.action-button {
+    display: inline-block;
+    width:250px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    }
+
+.action-button-green{
+    background-color: #04B431;
+    color: #fff;
+    font-weight: bold;
+    }
+    .action-button-green:hover{
+        background-color: #2BBE52;
+        }
+    .action-button-green:active{
+        background-color: #4FCB70;
+        }
+
+.action-button-red{
+    background-color: #DF0101;
+    color: #fff;
+    font-weight: bold;
+    }
+    .action-button-red:hover{
+        background-color: #FE2E2E;
+        }
+    .action-button-red:active{
+        background-color: #FA5858;
+        }
